@@ -1,4 +1,5 @@
 # 💫 About Me:
+
 🚀 I'm currently working on<br>Learning ARM Cortex-M (STM32F446RE) and embedded programming<br><br>Exploring bare-metal basics (startup process, registers, memory layout)<br><br>Building small projects in C, including a simple password database with encryption<br><br>🤝 I'm looking to collaborate on<br><br>Beginner-friendly embedded or low-level projects<br><br>C programming projects<br><br>📚 I'm currently learning<br><br>ARM Cortex-M fundamentals (boot process, interrupts, memory)<br><br>Embedded C<br><br>C language in depth<br><br>Haskell & Java (university coursework)<br><br>⚡ Fun fact<br><br>CS student at the University of Innsbruck (2nd semester)<br><br>I enjoy understanding how things work under the hood
 
 
