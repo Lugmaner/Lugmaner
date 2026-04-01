@@ -106,5 +106,5 @@ Small automation tools:
 
 ## Contact
 
-- Email: [luki.heel@gmail.com](mailto:luki.heel@gmail.com)  
+- Email: [lukas.heel@outlook.at](mailto:lukas.heel@outlook.at)  
 - GitHub: https://github.com/Lugmaner  
