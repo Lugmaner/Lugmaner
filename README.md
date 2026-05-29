@@ -2,74 +2,65 @@
 
 ## About Me
 
-I am a Computer Science student at the University of Innsbruck with a growing interest in **low-level programming, system behavior, and mathematically grounded problem solving**.
+Ich studiere Informatik an der Universität Innsbruck und interessiere mich vor allem für sauberen, gut getesteten Code, Algorithmen, Datenstrukturen und mathematische Grundlagen in der Programmierung.
 
-My focus lies in understanding how software behaves on a deeper level — particularly in terms of memory, data structures, and system interactions.  
-Through my studies, I am also developing an interest in **engineering-oriented and physics-based approaches to software**, especially where computation meets formal reasoning and simulation.
+Mich interessiert besonders, wie Software unter der Oberfläche funktioniert: Speicherverwaltung, Betriebssystemgrundlagen, einfache Systemnähe und generell die Frage, warum ein Programm nicht nur läuft, sondern korrekt und nachvollziehbar aufgebaut ist.
 
----
+Aktuell arbeite ich vor allem mit Java und C. In beiden Sprachen fühle ich mich gut bis sehr gut zurecht, wobei Java bei mir aktuell stärker in Richtung objektorientiertes Design und Testing geht, während C für mich vor allem spannend ist, um Speicher, Datenstrukturen und low-level Grundlagen besser zu verstehen.
 
-## Current Focus
-
-- Deepening my understanding of the C programming language  
-- Manual memory management (heap, stack, ownership concepts)  
-- Fundamentals of operating systems and POSIX  
-- Computer architecture basics (memory, registers, execution model)  
-- Object-oriented programming (Java, using IntelliJ)  
-- Functional programming concepts (Haskell)  
-- Mathematical computing and numerical thinking (Julia)  
-- Bash / shell scripting  
+Außerdem habe ich solide Grundlagen in Haskell und Julia. Haskell hilft mir dabei, funktionale Konzepte besser zu verstehen, und Julia lerne ich gerade im Studium. Langfristig möchte ich Julia auch für numerische Projekte einsetzen, zum Beispiel für eine überarbeitete Version meiner Rocket Flight Simulation.
 
 ---
 
 ## Projects
 
-### Rocket Flight Simulation (C)
+### ExamFlow (Java)
 
-A physics-based simulation of vertical rocket flight with a focus on **numerical modeling and system dynamics**.
+ExamFlow ist ein Java-Projekt, mit dem automatisch Lernblöcke für Prüfungen geplant werden sollen. Die Grundidee ist, dass Prüfungen, Deadlines, Lernaufwand und bereits belegte Zeitfenster berücksichtigt werden und daraus ein realistischer Lernplan entsteht.
 
-**Features:**
-- Simulation of thrust, gravity, aerodynamic drag, and fuel consumption  
-- Exponential atmosphere model (density as a function of altitude)  
-- Time-stepped numerical integration  
-- Tracking of key values (velocity, height, fuel, drag, density)  
-- Detection of fuel depletion and ground impact  
+Der aktuelle Kern ist ein `GreedyScheduler`, der Prüfungen nach Deadline sortiert und versucht, passende Lernblöcke vor dem jeweiligen Prüfungstermin einzuplanen. Dabei werden fixe Termine, Tagesgrenzen, Session-Länge und Pausen berücksichtigt. Wenn keine gültige Planung möglich ist, wird eine eigene Exception geworfen.
 
-**Focus areas:**
-- Modeling physical systems in code  
-- Structuring update pipelines (mass → forces → motion)  
-- Numerical thinking and simulation design  
+Was aktuell enthalten ist:
 
----
+- `GreedyScheduler` als konkrete Implementierung einer Scheduling-Strategie
+- Modelle wie `Exam`, `StudyBlock`, `TimeSlot` und `FixedAppointment`
+- Interfaces wie `SchedulingStrategy` und `Schedulable`
+- eigene Fehlerbehandlung mit `FailedToScheduleExamException`
+- erste Struktur für CLI und Export
+- JUnit-Tests für Blockdauer, Gesamtlernzeit und Scheduling-Verhalten
 
-### Password Manager (C)
-
-A practice project developed together with a fellow student, focusing on **internal structure and memory correctness**.
-
-**Note:**  
-This project is intended for learning purposes only and is not suitable for real-world use (no secure encryption).
-
-**My contribution:**
-
-- `database.c / database.h`  
-- `entry.c / entry.h`  
-
-**Focus areas:**
-
-- Dynamic data structures  
-- Clear memory ownership  
-- Safe memory deallocation  
-- Avoidance of undefined behavior  
-- Separation of system components  
+Der Fokus liegt für mich hier vor allem auf sauberem Java-Code, objektorientierter Struktur, nachvollziehbarer Logik und Testing. Gerade bei ExamFlow versuche ich, nicht nur „irgendwie“ eine Lösung zu bauen, sondern die einzelnen Teile so zu strukturieren, dass sie später gut erweiterbar und testbar bleiben.
 
 ---
 
-### Bash Scripts
+### Rocket Flight Simulation (C, später eventuell Julia)
 
-Small automation tools:
+Die Rocket Flight Simulation ist ein kleines physikbasiertes Simulationsprojekt in C. Es geht um einen vertikalen Raketenflug mit Schub, Gravitation, Luftwiderstand, Treibstoffverbrauch und einem einfachen Atmosphärenmodell.
 
-- `bootstrap.sh` – development environment setup  
-- `watchdog.sh` – process monitoring with timeout  
+Das Projekt ist für mich vor allem interessant, weil hier Mathematik, Physik und Programmierung direkt zusammenkommen. Die Simulation arbeitet zeitdiskret und berechnet Schritt für Schritt Werte wie Geschwindigkeit, Höhe, Masse, Luftdichte und Widerstand.
+
+Langfristig möchte ich das Projekt eventuell in Julia neu oder erweitert umsetzen. Julia lerne ich gerade im Studium, und ich möchte die Sprache später gezielt für numerische Simulationen und mathematischere Projekte verwenden.
+
+---
+
+### Password Manager (C, gemeinsam mit einem Kollegen)
+
+Der Password Manager ist ein Übungsprojekt in C, das ich gemeinsam mit einem Kollegen angefangen habe. Das Projekt ist nicht für echten produktiven Einsatz gedacht und verwendet keine sichere Verschlüsselung. Der Zweck war eher, mehr praktische Erfahrung mit C zu sammeln.
+
+Mein Fokus lag dabei auf der internen Struktur, dynamischen Datenstrukturen und sauberem Speicher-Management. Besonders wichtig war für mich, klarer zu verstehen, wem Speicher gehört, wann etwas freigegeben werden muss und wie man typische Fehler in C vermeidet.
+
+Mein Teil:
+
+- `database.c / database.h`
+- `entry.c / entry.h`
+
+Fokusbereiche:
+
+- Heap-Speicher
+- dynamische Datenstrukturen
+- klare Speicher-Ownership
+- sauberes Freigeben von Speicher
+- Vermeidung von Undefined Behavior
 
 ---
 
@@ -94,17 +85,20 @@ Small automation tools:
 
 ## Interests
 
-- Low-level programming  
-- Memory management  
-- Computer architecture  
-- Operating systems  
-- Numerical simulation and system dynamics  
-- Mathematically grounded problem solving  
-- Engineering-oriented software  
+- sauberer und gut getesteter Code
+- Algorithmen und Datenstrukturen
+- mathematische Grundlagen in der Programmierung
+- low-level Programmierung
+- Speicherverwaltung
+- Betriebssystemgrundlagen
+- C und systemnahe Programmierung
+- Java, objektorientiertes Design und Testing
+- numerische Simulationen
+- Julia für mathematische und technische Anwendungen
 
 ---
 
 ## Contact
 
-- Email: [lukas.heel@outlook.at](mailto:lukas.heel@outlook.at)  
-- GitHub: https://github.com/Lugmaner  
+- Email: [lukas.heel@outlook.at](mailto:lukas.heel@outlook.at)
+- GitHub: [https://github.com/Lugmaner](https://github.com/Lugmaner)
