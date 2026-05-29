@@ -4,11 +4,14 @@
 
 Ich studiere Informatik an der Universität Innsbruck und interessiere mich vor allem für sauberen, gut getesteten Code, Algorithmen, Datenstrukturen und mathematische Grundlagen in der Programmierung.
 
-Mich interessiert besonders, wie Software unter der Oberfläche funktioniert: Speicherverwaltung, Betriebssystemgrundlagen, einfache Systemnähe und generell die Frage, warum ein Programm nicht nur läuft, sondern korrekt und nachvollziehbar aufgebaut ist.
+Aktuell arbeite ich hauptsächlich mit Java und C. In Java beschäftige ich mich vor allem mit objektorientiertem Design, Projektstruktur und Testing. In C interessiert mich besonders, wie Speicherverwaltung, Pointer, dynamische Datenstrukturen und systemnahe Grundlagen praktisch funktionieren.
 
-Aktuell arbeite ich vor allem mit Java und C. In beiden Sprachen fühle ich mich gut bis sehr gut zurecht, wobei Java bei mir aktuell stärker in Richtung objektorientiertes Design und Testing geht, während C für mich vor allem spannend ist, um Speicher, Datenstrukturen und low-level Grundlagen besser zu verstehen.
+Mir ist wichtig, nicht nur Code zu schreiben, der irgendwie läuft, sondern nachvollziehbare Lösungen zu bauen: verständliche Struktur, klare Verantwortlichkeiten und Tests, die zeigen, dass die Logik auch in Randfällen funktioniert.
 
-Außerdem habe ich solide Grundlagen in Haskell und Julia. Haskell hilft mir dabei, funktionale Konzepte besser zu verstehen, und Julia lerne ich gerade im Studium. Langfristig möchte ich Julia auch für numerische Projekte einsetzen, zum Beispiel für eine überarbeitete Version meiner Rocket Flight Simulation.
+Außerdem habe ich solide Grundlagen in Haskell und Julia. Haskell hilft mir dabei, funktionale Konzepte besser zu verstehen. Julia lerne ich aktuell im Studium und möchte die Sprache später auch für numerische Projekte einsetzen, zum Beispiel für eine überarbeitete Version meiner Rocket Flight Simulation.
+
+Meine aktuellen Projekte sind vor allem Lernprojekte, mit denen ich gezielt bestimmte Bereiche vertiefe: Scheduling und Testing in Java mit ExamFlow, Speicherverwaltung und Datenstrukturen in C mit dem Password Manager, sowie numerische Simulation und physikalische Modellierung mit der Rocket Flight Simulation.
+
 
 ---
 
