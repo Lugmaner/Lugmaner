@@ -101,6 +101,10 @@ Fokusbereiche:
 
 ---
 
+Aktuell suche ich nach Praktikums- oder Werkstudentenstellen im Bereich Softwareentwicklung.
+
+---
+
 ## Contact
 
 - Email: [lukas.heel@outlook.at](mailto:lukas.heel@outlook.at)
