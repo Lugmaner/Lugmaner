@@ -8,10 +8,9 @@ Aktuell arbeite ich hauptsächlich mit Java und C. In Java beschäftige ich mich
 
 Mir ist wichtig, nicht nur Code zu schreiben, der irgendwie läuft, sondern nachvollziehbare Lösungen zu bauen: verständliche Struktur, klare Verantwortlichkeiten und Tests, die zeigen, dass die Logik auch in Randfällen funktioniert.
 
-Außerdem habe ich solide Grundlagen in Haskell und Julia. Haskell hilft mir dabei, funktionale Konzepte besser zu verstehen. Julia lerne ich aktuell im Studium und möchte die Sprache später auch für numerische Projekte einsetzen, zum Beispiel für eine überarbeitete Version meiner Rocket Flight Simulation.
+Außerdem habe ich solide Grundlagen in Haskell und Julia. Haskell hilft mir dabei, funktionale Konzepte besser zu verstehen. Julia lerne ich aktuell im Studium und möchte die Sprache später auch für numerische Projekte einsetzen.
 
-Meine aktuellen Projekte sind vor allem Lernprojekte, mit denen ich gezielt bestimmte Bereiche vertiefe: Scheduling und Testing in Java mit ExamFlow, Speicherverwaltung und Datenstrukturen in C mit dem Password Manager, sowie numerische Simulation und physikalische Modellierung mit der Rocket Flight Simulation.
-
+Meine aktuellen Projekte sind vor allem Lernprojekte, mit denen ich gezielt bestimmte Bereiche vertiefe: Scheduling und Testing in Java mit ExamFlow, Speicherverwaltung und Datenstrukturen in C mit dem Password Manager.
 
 ---
 
@@ -33,16 +32,6 @@ Was aktuell enthalten ist:
 - JUnit-Tests für Blockdauer, Gesamtlernzeit und Scheduling-Verhalten
 
 Der Fokus liegt für mich hier vor allem auf sauberem Java-Code, objektorientierter Struktur, nachvollziehbarer Logik und Testing. Gerade bei ExamFlow versuche ich, nicht nur „irgendwie“ eine Lösung zu bauen, sondern die einzelnen Teile so zu strukturieren, dass sie später gut erweiterbar und testbar bleiben.
-
----
-
-### Rocket Flight Simulation (C, später eventuell Julia)
-
-Die Rocket Flight Simulation ist ein kleines physikbasiertes Simulationsprojekt in C. Es geht um einen vertikalen Raketenflug mit Schub, Gravitation, Luftwiderstand, Treibstoffverbrauch und einem einfachen Atmosphärenmodell.
-
-Das Projekt ist für mich vor allem interessant, weil hier Mathematik, Physik und Programmierung direkt zusammenkommen. Die Simulation arbeitet zeitdiskret und berechnet Schritt für Schritt Werte wie Geschwindigkeit, Höhe, Masse, Luftdichte und Widerstand.
-
-Langfristig möchte ich das Projekt eventuell in Julia neu oder erweitert umsetzen. Julia lerne ich gerade im Studium, und ich möchte die Sprache später gezielt für numerische Simulationen und mathematischere Projekte verwenden.
 
 ---
 
