@@ -4,54 +4,15 @@
 
 Ich studiere Informatik an der Universität Innsbruck und interessiere mich vor allem für sauberen und dokumentierten Code, Algorithmen, Datenstrukturen und mathematische Grundlagen in der Programmierung.
 
-Aktuell arbeite ich hauptsächlich mit Java und C. In Java beschäftige ich mich vor allem mit objektorientiertem Design, Projektstruktur und Testing. In C interessiert mich besonders, wie Speicherverwaltung, Pointer, Threads, Synchronisation und systemnahe Grundlagen praktisch funktionieren.
+Aktuell arbeite ich hauptsächlich mit C. In C interessiert mich besonders, wie Speicherverwaltung, Pointer, Threads, Synchronisation und systemnahe Grundlagen praktisch funktionieren.
 
 Mir ist wichtig, nicht nur Code zu schreiben, der irgendwie läuft, sondern nachvollziehbare Lösungen zu bauen: verständliche Struktur, klare Verantwortlichkeiten und Tests, die zeigen, dass die Logik auch in Randfällen funktioniert.
 
 Außerdem habe ich solide Grundlagen in Haskell und Julia. Haskell hilft mir dabei, funktionale Konzepte besser zu verstehen. Julia lerne ich aktuell im Studium und möchte die Sprache später auch für numerische und mathematische Projekte einsetzen.
 
-Meine aktuellen Projekte sind hauptsächlich Lernprojekte, mit denen ich gezielt verschiedene Bereiche vertiefe: Scheduling und Testing in Java mit ExamFlow, Speicherverwaltung in C mit meinem eigenen Memory Allocator und Multithreading sowie Dateiabhängigkeiten mit C_Forge.
-
 ---
 
 ## Projects
-
-### ExamFlow (Java)
-
-ExamFlow ist ein Java-Projekt, mit dem automatisch Lernblöcke für Prüfungen geplant werden sollen. Die Grundidee ist, dass Prüfungen, Deadlines, Lernaufwand und bereits belegte Zeitfenster berücksichtigt werden und daraus ein realistischer Lernplan entsteht.
-
-Der aktuelle Kern ist ein `GreedyScheduler`, der Prüfungen nach Deadline sortiert und versucht, passende Lernblöcke vor dem jeweiligen Prüfungstermin einzuplanen. Dabei werden fixe Termine, Tagesgrenzen, Session-Länge und Pausen berücksichtigt. Wenn keine gültige Planung möglich ist, wird eine eigene Exception geworfen.
-
-Was aktuell enthalten ist:
-
-- `GreedyScheduler` als konkrete Implementierung einer Scheduling-Strategie
-- Modelle wie `Exam`, `StudyBlock`, `TimeSlot` und `FixedAppointment`
-- Interfaces wie `SchedulingStrategy` und `Schedulable`
-- eigene Fehlerbehandlung mit `FailedToScheduleExamException`
-- JUnit-Tests für Blockdauer, Gesamtlernzeit und Scheduling-Verhalten
-
-Der Fokus liegt für mich hier vor allem auf sauberem Java-Code, objektorientierter Struktur, nachvollziehbarer Logik und Testing. Gerade bei ExamFlow versuche ich, die einzelnen Teile so zu strukturieren, dass sie später gut erweiterbar und testbar bleiben.
-
----
-
-### my_memory_allocator (C)
-
-`my_memory_allocator` ist ein eigener Speicherallokator in C, der auf `sbrk` basiert. Das Projekt stellt eigene Implementierungen von `malloc`, `calloc`, `realloc` und `free` bereit.
-
-Das Ziel des Projekts ist es, besser zu verstehen, wie dynamische Speicherverwaltung intern funktioniert. Dabei geht es unter anderem darum, Speicherblöcke zu verwalten, freien Speicher wiederzuverwenden und darauf zu achten, dass keine ungültigen Speicherzugriffe entstehen.
-
-Fokusbereiche:
-
-- Heap-Speicher und `sbrk`
-- eigene Implementierungen von `malloc`, `calloc`, `realloc` und `free`
-- Verwaltung von Speicherblöcken
-- Pointer und Pointer-Arithmetik
-- Wiederverwendung von freigegebenem Speicher
-- Vermeidung von Speicherlecks und Undefined Behavior
-
-Der Memory Allocator ist vor allem ein Lernprojekt, um die Abläufe hinter der normalen Speicherverwaltung besser nachvollziehen zu können.
-
----
 
 ### C_Forge (C)
 
